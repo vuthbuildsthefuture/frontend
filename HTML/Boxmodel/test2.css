@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-card{
+    width: 380px;
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 420px;
+    border-radius: 10px;
+    padding: 20px;
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 5px 1px black;
+}
+.box{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: blue;
+}
+.title{
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+}
+.dis{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn1{
+    width: 130px;
+    height: 45px;
+    background-color: gray;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn2{
+    width: 100px;
+    height: 45px;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}

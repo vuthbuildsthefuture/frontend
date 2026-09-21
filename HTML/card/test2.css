@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.body{
+    width: 70%;
+    height: 600px;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.body .image{
+    width: 50%;
+    height: 600px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width: 90%; 
+    height: 90%;
+    border-radius: 20px;
+}
+.body .detail{
+    width: 50%;
+    height: 600px;
+    /* background-color: blue; */
+    padding: 10px;
+}
+.detail h1{
+    margin-top: 15px;
+}
+.detail .star{
+    color: yellow;
+    border: none;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+.detail .star p{
+    color: black;
+}
+.price p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.discription p{
+    font-size: 15px;
+}
+.main-size{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 75%;
+    font-weight: bold;
+    margin-top: 15p;
+}
+.detail .btn-size{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 15px;
+}
+.detail .btn-size button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(120, 119, 119);
+    cursor: pointer;
+}
+.color{
+    margin-top: 15px;
+}
+.color .btn-color{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.color p{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.color .brown{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: brown;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.color .green{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.color .red{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.pre-order{
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+.stepper {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f8;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-family: sans-serif;
+}
+
+.stepper button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+.stepper button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.stepper input {
+    width: 36px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0d1b3e;
+    outline: none;
+}
+
+.stepper input::-webkit-outer-spin-button,
+.stepper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.pre-order .add button{
+    width: 430px;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(176, 55, 55);
+}
+.buy{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.buy button{
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: palevioletred;
+}

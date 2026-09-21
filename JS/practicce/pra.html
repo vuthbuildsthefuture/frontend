@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+
+    <p><strong>Number of n: 20</strong></p>
+
+    <p>Task 1: <span id="task1"></span></p>
+    <p>Task 2: <span id="task2"></span></p>
+    <p>Task 3: <span id="task3"></span></p>
+    <p>Task 4: <span id="task4"></span></p>
+    <p>Task 5: <span id="task5"></span></p>
+    <p>Task 6: <span id="task6"></span></p>
+    <p>Task 7: <span id="task7"></span></p>
+    <p>Task 8: <span id="task8"></span></p>
+    <p>Task 9: <span id="task9"></span></p>
+    <p>Task 10: <span id="task10"></span></p>
+    <p>Task 11: <span id="task11"></span></p>
+
+    <script>
+        let n = 20;
+        let out;
+        let rad = (deg) => (deg * Math.PI) / 180;
+
+        out = document.getElementById("task1");
+        for (let i = -2; i <= 6; i += 2) {
+            out.innerHTML += `${i} `;
+        }
+
+        out = document.getElementById("task2");
+        for (let i = 2; i <= n; i += 2) {
+            out.innerHTML += `${i} `;
+        }
+
+        out = document.getElementById("task3");
+        for (let i = 10; i >= -n; i -= 10) {
+            out.innerHTML += `${i} `;
+        }
+
+        out = document.getElementById("task4");
+        for (let i = 1; i <= n; i += 2) {
+            out.innerHTML += `${i} `;
+        }
+
+        out = document.getElementById("task5");
+        let count5 = 0;
+        for (let i = 50; count5 < 4; i -= 6) {
+            out.innerHTML += `${i} `;
+            count5++;
+        }
+
+        out = document.getElementById("task6");
+        let count6 = 0;
+        for (let i = 22; count6 < 10; i += 4) {
+            out.innerHTML += `${i} `;
+            count6++;
+        }
+
+        out = document.getElementById("task7");
+        let sum7 = 0;
+        for (let i = 2; i <= n; i += 2) {
+            out.innerHTML += (i === 2) ? `${i}` : ` + ${i}`;
+            sum7 += i;
+        }
+        out.innerHTML += ` = ${sum7}`;
+
+        out = document.getElementById("task8");
+        let sum8 = (Math.cos(rad(0)) + Math.cos(rad(n))).toFixed(5);
+        out.innerHTML = `cos(0) + cos(${n}) = ${sum8}`;
+
+        out = document.getElementById("task9");
+        let sum9 = 10;
+        out.innerHTML = "10";
+        for (let i = 49; i >= n; i--) {
+            out.innerHTML += ` - ${i}`;
+            sum9 -= i;
+        }
+        out.innerHTML += ` = ${sum9}`;
+
+        out = document.getElementById("task10");
+        let angles = [120, 90, 60, 30];
+        let sum10 = 0;
+        for (let i = 0; i < angles.length; i++) {
+            out.innerHTML += (i === 0) ? `sin(${angles[i]})` : ` + sin(${angles[i]})`;
+            sum10 += Math.sin(rad(angles[i]));
+        }
+        out.innerHTML += ` = ${sum10.toFixed(5)}`;
+
+        out = document.getElementById("task11");
+        let sum11 = 0;
+        for (let i = 1; i < n; i += 2) {
+            out.innerHTML += (i === 1) ? `${i} x ${i}` : ` + ${i} x ${i}`;
+            sum11 += i * i;
+        }
+        out.innerHTML += ` = ${sum11}`;
+    </script>
+
+</body>
+</html>

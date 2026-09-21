@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hover button{
+        width: 120px;
+        height: 40px;
+        background-color: aqua;
+        transition: all 0.5s ease-in-out;
+        border-radius: 10px;
+    }
+    .hover button:hover{
+        background-color: bisque;
+        /* color: white; */
+    }
+    .active button{
+        width: 120px;
+        height: 40px;
+        background-color: rgb(23, 47, 47);
+        color: white;
+        transition: all 0.5s ease-in-out;
+        border-radius: 10px;
+    }
+    .active button:active{
+        background-color: blue;
+    }
+    .focus input:focus{
+        outline: none;
+        border: 3px solid blueviolet;
+        border-radius: 10px;
+    }
+    .visited a:visited{
+        color: brown;
+    }
+.child p:first-child{
+    color: aqua;
+}
+.child p:last-child{
+    color: rgb(191, 248, 248);
+}
+.child p:nth-child(2){
+    color: rgb(46, 61, 61);
+}
+.check input:checked{
+    width: 50px;
+    height: 50px;
+    border-color: aqua;
+}
+.disable input:disabled{
+    background-color: blue;
+}
+</style>
+<body>
+    <div class = "hover">
+        <h1>1 :hover & :active</h1>
+        <button>click me</button>
+    </div>
+    <div class="active">
+        <button>click me</button>
+    </div>
+    <div class = "focus">
+        <h1>2 :focus</h1>
+        <input type="text" placeholder="input your name">
+    </div>
+    <div class = "visited">
+        <h1>3 :link & :visited</h1>
+        <a href="https://www.magnific.com/free-vector/fuck-you-symbol-comic-style_10296883.htm">Go to next page</a>
+    </div>
+    <div class="child">
+        <h1>4 :first-child/ :last-child/ :nth-child</h1>
+        <p>first-child</p>
+        <p>last-child</p>
+        <p>nth-child</p>
+    </div>
+    <div class = "check">
+        <h1>5 :checked</h1>
+        <input type="checkbox">
+        <label for="checkbox">Accept Term</label>
+    </div>
+    <div class = "disable">
+        <h1>6 :disable</h1>
+        <input type="text" placeholder="Disable Input">
+    </div>
+</body>
+</html>

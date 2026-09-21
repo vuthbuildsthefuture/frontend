@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 2000px;
+    }
+    .static{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        top: 300px;
+        position: static;
+    }
+    .reletive{
+        width: 500px;
+        height: 100px;
+        background-color: rgb(21, 47, 47);
+        position: absolute;
+    }
+    .absolute{
+        width: 200px;
+        height: 100px;
+        background-color: rgb(17, 247, 247);
+        /* left: 200px;
+        right: 100px;
+        top: 30px;
+        bottom: 300px; */
+    }
+    .fix{
+        top: 0;
+        width: 200px;
+        height: 300px;
+        background-color: blue;
+        position: fixed;
+        z-index: 5;
+        left: 400px;
+    }
+    .z-index{
+        width: 200px;
+        height: 200px;
+        background-color:rgb(1, 41, 41);
+        position: relative;
+    }
+    .p{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .p img{
+        width: 100%;
+        height: 100%;
+    }
+    .p img:hover{
+        transform: scale(3);
+    }
+</style>
+<body>
+    <div class = "static"></div>
+    <div class = "reletive">reletive</div>
+    <div class = "absolute">absolute</div>
+    <div class = "fix">fix</div>
+    <div class = "z-index">z-index</div>
+    <p>hello</p>
+    <div class = "p">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6G4yjtL7qBIg_ISIAq0xnULW6OMu624Ld_w7T3uHJ_XOs6Y2Z7jle65A&s=10" alt="chhing jong">
+    </div>
+</body>
+</html>

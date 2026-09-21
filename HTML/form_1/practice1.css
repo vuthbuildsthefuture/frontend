@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* body {
+    background-color: #f7f4ec;
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("https://wallpaperaccess.com/full/20457680.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+/* --- Navigation Bar --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.lang-globe {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.fa-solid{
+    color: #ffffff;
+}
+
+.btn-demo {
+    background-color: #f3ca8c;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-demo:hover {
+    background-color: #ebb872;
+}
+
+.sales-email {
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 20px
+}
+
+/* --- Central Card Layout --- */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+
+.login-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* --- Form Elements --- */
+.form-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    border-color: #f3ca8c;
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.field-action {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+}
+
+.trouble-link {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #444;
+    text-decoration: none;
+    margin: 12px 0 24px 0;
+    font-weight: 500;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #f3ca8c;
+    color: #1a1a1a;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #ebb872;
+}
+
+/* --- Divider --- */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px dashed #d5d5d5;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* --- Social Buttons --- */
+.social-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+.signup-text {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.signup-text a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* --- Decorative Background Mock Elements --- */
+.bg-illustration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}

@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.component{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.nav1{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+.link{
+    width: 40%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.icon{
+    width: 40%;
+    height: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: end;
+}
+
+.link ul{
+    display: flex;
+    gap: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+ul li {
+    list-style-type: none;
+}
+.chillogo{
+    width: 80%;
+    height: 100%;
+
+}
+.chillogo img{
+    width: 100%;
+    height: 100%;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.input input{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 4px;
+    padding-left: 25px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+.mianinput{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon1{
+    position: absolute;
+    z-index: 50;
+    padding-left: 5px;
+    color: gray;
+}
+.mainicon{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.btn{
+    width: 30%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btn button{
+    width: 100px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    border: none;
+
+}
+.banner{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+.picBanner{
+    width: 70%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/736x/8f/bc/68/8fbc68df38ad2b413d4fb445eeddf121.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.picBanner .btn{
+    width: 100%;
+    height: 100%;
+}
+.picBanner .btn button{
+    width: 120px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: orangered;
+    margin-top: 400px;
+    box-shadow: 0 0 20px 2px white;
+    transition: all 0.2s ease-in-out;
+}
+.picBanner .btn button:hover{
+    transform: translateY(-10px) scale(1);
+}
+.logoGroup{
+    width: 100%;
+    height: 220px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoAll{
+    width: 70%;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    gap:40px;
+    justify-content: center;
+}
+.zando{
+    width: 16.50%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.zando img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    width: 100%;
+    height: 40px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.text1{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    font-family: "Roboto Condensed", sans-serif;
+}
+.recommend p{
+    margin-left: 260px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.mainCart{
+    width: 100%;
+    height: 450px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    /* gap */
+}
+.cart{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.cart1{
+    width: 24%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+    /* display: flex; */
+}
+.cart1 .imageCart{
+    width: 100%;
+    height: 85%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.cart1 .imageCart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dis{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 40;
+    top: 10px;
+    left: 10px;
+}
+.dis p{
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.title{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(71, 56, 56); */
+    padding-top: 15px;
+}
+.title .price{
+    display: flex;
+    gap: 8px;
+}
+.title .price p{
+    color: red;
+    font-weight: bold;
+}
+.mainPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.tagep{
+    margin-top: 5px;
+}
+.maincart1{
+    width: 100%;
+    height: 550px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.maincart1 .cart1{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.newin{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+    /* display: flex; */
+}
+.newin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sportlife{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+}
+.sportlife img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.smartcasual{
+    width: 33%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+}
+.smartcasual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

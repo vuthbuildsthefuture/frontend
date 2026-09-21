@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+    }
+    a{
+        display: block;
+        background-color: aqua;
+    }
+    p{
+        /* display: inline; */
+        display: inline-block;
+        width: 900px;
+        /* display: none; */
+        background-color: aquamarine;
+    }
+    .box1{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        display: flex;
+    }
+
+    .parentBox{
+        /* height: 100vh; */
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        align-items: center;
+
+    }
+
+    .b1{
+        width: 600px;
+        height: 200px;
+        background-color: rgb(75, 75, 125);
+    }
+    .parentB{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+</style>
+<body>
+    <a href="">Home</a>
+    <a href="">about</a>
+    <p>HII Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aut nihil reiciendis adipisci incidunt assumenda sequi odio velit exercitationem! Earum ratione nostrum ea quis natus corporis illo sed corrupti modi.</p>
+    <p>hello</p>
+    <h1>hello</h1>
+
+    <div class="parentBox">
+        <div class="box1">
+
+        </div>
+        <div class="box1">
+
+        </div>
+        <div class="box1">
+
+        </div>
+    </div>
+
+    <div class="parentB">
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+    </div>
+
+</body>
+</html>

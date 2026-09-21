@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light border mt-5 float-end" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Add new class +
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 700px;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Class</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Course</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">Web-frontend</option>
+                                        <option value="">Web-backend</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Time</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">12:00 - 1:15</option>
+                                        <option value="">2:00 - 3:15</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Sex</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Salary</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">50$</option>
+                                        <option value="">75$</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Skill</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">C++</option>
+                                        <option value="">C#</option>   
+                                        <option value="">Python</option>   
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Experience</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">First Time</option>
+                                        <option value="">3m</option>
+                                        <option value="">9m</option>
+                                        <option value="">1y</option>
+                                        <option value="">3y</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4 w-50">
+                                    <label class="form-label text-primary" for="">Age</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">12-17</option>
+                                        <option value="">18-25</option>
+                                        <option value="">26-35</option>
+                                        <option value="">35+</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 w-50">
+                                    <label class="form-label text-primary" for="">Province</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">Phonm Penh</option>
+                                        <option value="">Takeo</option>
+                                        <option value="">Banteay Meanchey</option>
+                                        <option value="">Kampot</option>
+                                        <option value="">Kep</option>
+                                        <option value="">Preah Sihanouk</option>
+                                        <option value="">Siem Reap</option>
+                                        <option value="">Koh Kong</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="col-lg-4">
+                                    <label class="form-label text-primary" for="">Status</label>
+                                    <select name="" id="" class="form-select">
+                                        <option value="">none</option>
+                                        <option value="">Select a course</option>
+                                        <option value="">Internship(FrontEnd)</option>
+                                    </select>
+                                </div> -->
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

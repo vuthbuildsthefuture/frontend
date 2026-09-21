@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <table class="table text-center container m-auto">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Total Score</th>
+                <th>Everage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id = " body ">
+
+        </tbody>
+    </table>
+    <script>
+        let id;
+        let name, gender;
+        let score1, score2, score3, score4, score5;
+        let total_score,everage;
+        let grade;
+
+        id = prompt("Enter ID : ");
+        name = prompt("Enter Name : ");
+        gender = prompt("Enter Gender : ");
+
+        score1 = Number(prompt("Enter Score 1: "));
+        score2 = Number(prompt("Enter Score 2: "));
+        score3 = Number(prompt("Enter Score 3: "));
+        score4 = Number(prompt("Enter Score 4: "));
+        score5 = Number(prompt("Enter Score 5: "));
+
+        total_score = score1 + score2 + score3 + score4 + score5;
+        everage = total_score / 5;
+
+        if (everage >= 90) {
+            grade = "A ";
+        } else if (everage >= 80) {
+            grade = "B ";
+        } else if (everage >= 70) {
+            grade = "C ";
+        } else if (everage >= 60) {
+            grade = "D ";
+        } else if (everage >= 50) {
+            grade = "E ";
+        } else {
+            grade = "F ";
+        }
+
+        document.getElementById("body ").innerHTML =
+        `<tr>
+        <th>${id}</th>
+        <th>${name}</th>
+        <th>${gender}</th>
+        <th>${everage}</th>
+        <th>${grade}</th>
+    </tr>`;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js " integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.container{
+    width: 70%;
+    height: 800px;
+    /* background-color: antiquewhite; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* gap: 10px; */
+}
+.logo{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 7px;
+}
+.navigate{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 7px;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 156, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 7px;
+}
+.main1{
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(77, 14, 37); */
+    display: flex;
+    margin-bottom: 7px;
+}
+.main1 .side{
+    width: 40%;
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 7px;
+}
+.main1 .body{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(41, 255, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

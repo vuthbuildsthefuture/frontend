@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+        }
+
+        /* Outer container with border */
+        .wrapper {
+            background-color: #ffffff;
+            border: 2px solid #a0a0a0;
+            padding: 12px;
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            /* gap: 8px; */
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Shared block alignment */
+        header, nav, aside, .content, section, footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            border-radius: 2px;
+        }
+
+        /* Header */
+        header {
+            background-color: #6b0fbe;
+            height: 65px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2ece31;
+            height: 65px;
+        }
+
+        /* Middle section wrapper */
+        .main-container {
+            display: flex;
+            gap: 8px;
+            height: 280px;
+        }
+
+        /* Left column */
+        aside {
+            background-color: #1e8320;
+            flex: 1;
+        }
+
+        /* Right column */
+        .right-column {
+            flex: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .content {
+            background-color: #ff0000;
+            flex: 1;
+        }
+
+        section {
+            background-color: #00b0ff;
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #830fe3;
+            height: 65px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>Header</header>
+        <nav>Navigate</nav>
+        
+        <div class="main-container">
+            <aside>Aside</aside>
+            <div class="right-column">
+                <div class="content">Content</div>
+                <section>Section</section>
+            </div>
+        </div>
+        
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>

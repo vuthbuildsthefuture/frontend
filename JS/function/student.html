@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jim+Nightshade&family=Khmer&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+</style>
+<body>
+
+    <form class="w-50 m-auto mt-4 p-4 shadow bg-dark bg-opacity-10 rounded-3">
+        <h1 class="text-center text-primary"><i><u>ប​​ញ្ជីឈ្មោះសិស្ស</u></i></h1>
+
+        <div class="row">
+            <div class="col col-6">
+                <label class="text-primary">លេខរៀង<span class="text-danger">(ETEC-001)</span></label>
+                <input type="text" class="form-control" id="id">
+            </div>
+            <div class="col col-6">
+                <label class="text-primary">ឈ្មោះសិស្ស</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col col-6">
+                <label class="text-primary">​ឆ្នាំសិក្សា</label>
+                <input type="text" class="form-control" id="year">
+            </div>
+            <div class="col col-6">
+                <label class="text-primary">បន្ទប់​</label>
+                <input type="text" class="form-control" id="room">
+            </div>
+            <div class="col col-3">
+                <label class="text-primary">HTML​</label>
+                <input type="text" class="form-control" id="s1">
+            </div>
+            <div class="col col-3">
+                <label class="text-primary">CSS</label>
+                <input type="text" class="form-control" id="s2">
+            </div>
+            <div class="col col-3">
+                <label class="text-primary">PHP​</label>
+                <input type="text" class="form-control" id="s3">
+            </div>
+            <div class="col col-3">
+                <label class="text-primary">Java​</label>
+                <input type="text" class="form-control" id="s4">
+            </div>
+        </div>
+        <!-- FIX 1: type="button" so the form does not submit and reload the page -->
+        <button type="button" onclick="info()" class="btn btn-success mt-4 btn-outline-warning text-light">Submit</button>
+    </form>
+
+    <div class="container m-auto mt-4" id="submit">
+    </div>
+    <script>
+        function info() {
+            let id = document.getElementById("id").value;
+            // FIX 2: .value belongs inside Number(...), with a dot, not a comma
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+            let s3 = Number(document.getElementById("s3").value);
+            let s4 = Number(document.getElementById("s4").value);
+            let name = document.getElementById("name").value;
+            let year = document.getElementById("year").value;
+            let room = document.getElementById("room").value;
+
+            let total_score = s1 + s2 + s3 + s4;
+            let avg = total_score / 4;
+            let grade;
+
+            if (avg >= 90) {
+                grade = 'A';
+            } else if (avg >= 80) {
+                grade = 'B';
+            } else if (avg >= 70) {
+                grade = 'C';
+            } else if (avg >= 60) {
+                grade = 'D';
+            } else if (avg >= 50) {
+                grade = 'E';
+            } else {
+                grade = 'F';
+            }
+
+            // "=" (not "+=") so each submit replaces the old result
+            document.getElementById("submit").innerHTML += `
+            <h2>ឈ្មោះ <span style="color: gold;">${name}</span> ឆ្នាំទី <span style="color: gold;">${year}</span> បន្ទប់ <span style="color: gold;">${room}</span></h2>
+    <table class="table table-bordered text-center">
+      <tr>
+        <th>លេខរៀង</th>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>PHP</th>
+        <th>Java</th>
+        <th>Total</th>
+        <th>Average</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>${id}</td>
+        <td>${s1}</td>
+        <td>${s2}</td>
+        <td>${s3}</td>
+        <td>${s4}</td>
+        <td>${total_score}</td>
+        <td>${avg.toFixed(2)}</td>
+        <td>${grade}</td>
+      </tr>
+    </table>
+  `;
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="loop"></div>
+
+    <script>
+        let n = -50;
+        let out;
+        let sum = 0;
+
+        out = document.getElementById("loop");
+
+        for (let i = 10; i >= n; i -= 10) {
+            out.innerHTML += `${i} `;
+            sum += i;
+        }
+        document.write(" = " + sum);
+    </script>
+</body>
+
+</html>

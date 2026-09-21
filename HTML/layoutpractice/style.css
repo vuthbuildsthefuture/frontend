@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 70%;
+    height: 700px;
+    /* background-color: blue; */
+    display: flex;
+}
+.section1{
+    width: 20%;
+    height: 700px;
+    background-color: aqua;
+    margin-right: 5px;
+}
+.section1 .box1{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.section2{
+    width: 60%;
+    height: 700px;
+    /* background-color: rgb(75, 5, 66); */
+}
+.section2 .box2{
+    width: 100%;
+    height: 40%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 5px;
+}
+.section2 .main1{
+    width: 100%;
+    height: 60%;
+    /* background-color: blue; */
+    display: flex;
+}
+.main1 .main2{
+    width: 59%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.main2 .box4{
+    width: 98%;
+    height: 49%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.main2 .box7{
+    width: 98%;
+    height: 48.7%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+}
+.main1 .main3{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(1, 49, 33); */
+}
+.main3 .box5{
+    width: 98%;
+    height: 49%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 5px;
+}
+.main3 .box8{
+    width: 98%;
+    height: 48.8%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.section3{
+    width: 20%;
+    height: 700px;
+    /* background-color: rgb(240, 93, 130); */
+}
+.section3 .box3{
+    width: 100%;
+    height: 40%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 5px;
+}
+.section3 .box6{
+    width: 100%;
+    height: 59.5%;
+    background-color: rgb(12, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+}

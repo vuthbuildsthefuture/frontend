@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    }
+
+    .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+
+    /* Shared section styles */
+    .header-section, .hero-section, .cards-section, .footer-section {
+    display: grid;
+    gap: 10px;
+    }
+
+    /* Colors based on diagram */
+    .orange-box { background-color: #f48225; min-height: 50px; border-radius: 4px; }
+    .yellow-box { background-color: #e0e012; min-height: 120px; border-radius: 4px; }
+    .blue-box   { background-color: #3b73ce; min-height: 100px; border-radius: 4px; }
+    .gray-box   { background-color: #e0e0e0; min-height: 40px; border-radius: 4px; }
+
+    /*1. MOBILE LAYOUT (Default: < 768px)
+    Single-column layout*/
+    
+    .header-section { grid-template-columns: 1fr; }
+    .hero-section   { grid-template-columns: 1fr; }
+    .cards-section  { grid-template-columns: 1fr; }
+    .footer-section { grid-template-columns: 1fr; }
+
+    /* ==========================================
+    2. TABLET LAYOUT (768px - 1023px)
+       ========================================== */
+    @media (min-width: 768px) {
+    .header-section {
+        grid-template-columns: 1fr; /* Single full row or split as needed */
+    }
+    .cards-section {
+        grid-template-columns: 1fr;
+    }
+    .footer-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    /* 3. DESKTOP LAYOUT (>= 1024px)*/
+
+    @media (min-width: 1024px) {
+    .header-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 side-by-side header cards */
+    }
+    .hero-section .yellow-box {
+        min-height: 180px;
+    }
+    .cards-section {
+        grid-template-columns: repeat(3, 1fr); /* 3 side-by-side blue cards */
+    }
+    .footer-section {
+        grid-template-columns: repeat(4, 1fr); /* 4 side-by-side footer boxes */
+    }
+    }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table m-auto">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Score1</th>
+                <th>Average</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+            
+        </tbody>
+    </table>
+    <script>
+        let student = [
+            {
+                id:1,
+                name:"vuth",
+                gender:"Male",
+                score1:99.98,
+                average:98,
+                grade:'A;'
+            }
+        ];
+        let list = "";
+
+        student.forEach((data)=>{
+            list += `
+            <tr>
+                <td>${data.id}</td>
+                <td>${data.name}</td>
+                <td>${data.gender}</td>
+                <td>${data.score1}</td>
+                <td>${data.average}</td>
+                <td>${data.grade}</td>
+            </tr>
+            `;
+        })
+    </script>
+</body>
+</html>
